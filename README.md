@@ -4,7 +4,7 @@
 
 Custom filled drawable RatingBar in Android Application, written in Kotlin. 
 
-<img src="https://github.com/WindSekirun/DesginRatingBar/blob/master/art/sample.png" width="202" height="360">
+<img src="https://github.com/WindSekirun/DesignRatingBar/blob/master/art/sample.png" width="202" height="360">
 
 ### Usages
 *rootProject/build.gradle*
