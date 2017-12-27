@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pyxis.uzuki.live.desginratingbardemo.MainActivity">
+
+    <pyxis.uzuki.live.desginratingbar.DesignRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:isIndicator="true"
+        android:rating="4.5"
+        app:emptyIcon="@drawable/ico_star"
+        app:filledIcon="@drawable/ico_star_on" />
+
+</android.support.constraint.ConstraintLayout>
