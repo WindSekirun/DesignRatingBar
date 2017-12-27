@@ -1,4 +1,4 @@
-package pyxis.uzuki.live.desginratingbar
+package pyxis.uzuki.live.designratingbar
 
 import android.content.Context
 import android.graphics.Bitmap

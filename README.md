@@ -1,5 +1,10 @@
-## DesignRatingBar 
+## DesignRatingBar [![](https://jitpack.io/v/WindSekirun/DesignRatingBar.svg)](https://jitpack.io/#WindSekirun/DesignRatingBar)
+
+[![Kotlin](https://img.shields.io/badge/kotlin-1.2.0-blue.svg)](http://kotlinlang.org)	[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
+
 Custom filled drawable RatingBar in Android Application, written in Kotlin. 
+
+<img src="https://github.com/WindSekirun/DesginRatingBar/blob/master/art/sample.png" width="202" height="360">
 
 ### Usages
 *rootProject/build.gradle*
@@ -14,7 +19,7 @@ allprojects {
 *app/build.gradle*
 ```
 dependencies {
-    implementation ''
+    implementation 'com.github.WindSekirun:DesignRatingBar:1.0.0'
 }
 ```
 
@@ -22,7 +27,7 @@ dependencies {
 
 #### XML
 ```XML
-<pyxis.uzuki.live.desginratingbar.DesignRatingBar
+<pyxis.uzuki.live.designratingbar.DesignRatingBar
     android:id="@+id/ratingBar"
     android:layout_width="wrap_content"
     android:layout_height="15dp"

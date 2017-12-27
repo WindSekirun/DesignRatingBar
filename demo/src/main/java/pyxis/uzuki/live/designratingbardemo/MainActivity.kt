@@ -1,4 +1,4 @@
-package pyxis.uzuki.live.desginratingbardemo
+package pyxis.uzuki.live.designratingbardemo
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
