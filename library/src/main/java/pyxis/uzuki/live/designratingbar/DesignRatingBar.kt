@@ -18,7 +18,15 @@ open class DesignRatingBar constructor(context: Context, private val attrs: Attr
     private var mSampleTile: Bitmap? = null
 
     var emptyIconRes: Int = R.drawable.ic_action_star_border
+        set(value) {
+            field = value
+            progressDrawable = createLayerDrawable()
+        }
     var filledIconRes: Int = R.drawable.ic_action_star
+        set(value) {
+            field = value
+            progressDrawable = createLayerDrawable()
+        }
 
     init {
         initView()
@@ -31,14 +39,16 @@ open class DesignRatingBar constructor(context: Context, private val attrs: Attr
             return
         }
 
-        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.DesignRatingBar) ?: return
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.DesignRatingBar)
+                ?: return
         emptyIconRes = typedArray.getResourceId(R.styleable.DesignRatingBar_emptyIcon, R.drawable.ic_action_star_border)
         filledIconRes = typedArray.getResourceId(R.styleable.DesignRatingBar_filledIcon, R.drawable.ic_action_star)
 
         typedArray.recycle()
     }
 
-    @Synchronized override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+    @Synchronized
+    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
 
         if (mSampleTile != null) {
