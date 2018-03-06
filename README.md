@@ -19,7 +19,7 @@ allprojects {
 *app/build.gradle*
 ```
 dependencies {
-    implementation 'com.github.WindSekirun:DesignRatingBar:1.0.0'
+    implementation 'com.github.WindSekirun:DesignRatingBar:1.1.0'
 }
 ```
 
